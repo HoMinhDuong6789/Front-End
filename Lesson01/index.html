@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="divided"></h1>
+    <script>
+        document.getElementById("divided").textContent=devided(10,5);   
+     
+
+
+        function devided(firstNuber, secondNuber){
+            return firstNuber/secondNuber;
+        }
+
+        var person ={
+            firstName:"John",
+            yearOfBirth:1999,
+            address:"Hai Chau",
+
+             getAge:function() { //anomynous finction
+                var d= new Date();
+                return d.getFullYear() - this.yearOfBirth;
+            }
+        };
+        
+        console.log(person.firstName);
+        console.log(person["address"]);
+
+        console.log(person.getAge());
+        
+
+    </script>
+</body>
+</html>

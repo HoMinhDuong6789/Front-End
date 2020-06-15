@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="txttime"></h1>
+    <button onclick="displayDate()">The Time is?</button>
+    <h1 id="text"></h1>
+    <script>
+        function displayDate(){
+            document.getElementById('txttime').textContent= Date();
+        }
+        //String property: leangth
+        //String methods: indexof(), 
+        //lastIndexOf(), 
+        //search()
+        var str = "Please locate where 'locate' occurs!";
+        document.getElementById("text").textContent=str;
+        console.log("the length of string is: "+str.length);
+        console.log("the index of the first position occurrence of string is str.indexOf(\"locat\")", str.indexOf("locate"));
+        console.log("the index of the last position occurrence of string is ", str.lastIndexOf("locate"));
+        console.log("the search starts at position 15, and search ti the beginiing of the string "+str.lastIndexOf("locate", 15));
+    
+        console.log("the search a string for a specified value and returns the position of the match: "+str.search("locate"));
+        
+    </script>
+</body>
+</html>
